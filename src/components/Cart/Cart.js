@@ -28,11 +28,10 @@ const Cart = ({ collection, setCollection, handleChange }) => {
         <h1>Cart page</h1>
 
         <div className={style.card}>
-          {collection.map((item ,index) => {
+          {collection.map((item) => {
             return (
               <div className={style.list} key={item.id}>
-                <p>{index +1}</p>
-                <h1>{item.title}</h1>
+                <h1 className={style.title}>{item.title}</h1>
                 <p>
                   <img src={item.img} alt="" className={style.img} />
                 </p>
